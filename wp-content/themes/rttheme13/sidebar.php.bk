@@ -1,0 +1,66 @@
+<div class="box four">
+	    <!-- box title-->
+	    <h4>Categories</h4>				
+	<!-- sub link-->
+		<ul class="sub_navigation">
+			<?php $luxury_taxonomies = get_terms('luxury_taxonomy'); ?>
+			<li class="heading">Luxury Travel
+				<ul class="children">
+			<?php foreach ($luxury_taxonomies as $luxury_taxonomy) {
+			?>
+					
+						<li class="sub-heading">
+							<a href="<?php get_term_link( $luxury_taxonomy->slug, 'luxury_taxonomy' ); ?>">
+							<?php echo $luxury_taxonomy->name; ?>
+							</a>
+						</li>
+				
+			<?php 
+			}
+			?>
+				</ul>
+			</li>
+		</ul>
+			
+	<!-- /sub link-->
+</div>
+
+<div class="box four">
+	    <!-- box title-->
+	<!-- sub link-->
+		<ul class="sub_navigation">
+			<?php $destination_taxonomies = get_terms('destinations_taxonomy'); ?>
+			<li>Destination
+				<ul class="children">
+			<?php foreach ($destination_taxonomies as $destination_taxonomy) {
+			?>
+					
+						<li>
+							<a href="<?php get_term_link( $destination_taxonomy->slug, 'destinations_taxonomy' ); ?>">
+							<?php echo $destination_taxonomy->name; ?>
+							</a>
+						</li>
+				
+			<?php 
+			}
+			?>
+				</ul>
+			</li>
+		</ul>
+			
+	<!-- /sub link-->
+</div>
+<style type="text/css">
+	.sub-heading{
+		display:none;
+	}
+</style>
+<script>
+	jquery(function($){
+			$('.heading').hover(function(){
+				$(this).find('.sub-heading').slideDown('100');
+			}).mouseleave(function(){
+				$(this).find('.sub-heading').slideUp('100');
+			});
+		});
+</script>

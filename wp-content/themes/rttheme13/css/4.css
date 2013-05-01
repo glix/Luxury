@@ -1,0 +1,125 @@
+/*
+    File Name: golden-style.css
+*/
+
+/* Top Bar */
+    #top_bar{
+        background:url(../images/golden-style/top_bar_background.png) repeat-x;
+    }
+    
+/* Navigation */
+    #navigation{
+        background:url(../images/golden-style/navigation_background.png) top no-repeat;
+    }
+
+    /* drop down links hover */
+    #navigation ul ul li:hover{ 
+       background:url(../images/golden-style/menu_background.png);
+    }
+   
+    /* drop down style */
+    #navigation ul li ul{ 
+        background:url(../images/golden-style/menu_background.png); 
+    }
+
+    #navigation ul ul li{
+        border:1px solid #858167;
+    }
+
+    #navigation ul li span{
+        color:#ADADA1;
+    }   
+
+/* Banner Bar */
+    .banner{ 
+        background:url(../images/golden-style/banner_background.png) center top no-repeat;
+        color:#9E998B; 
+    }
+
+    /* banner button */
+    a.banner_button{
+        color:#fff !important; 
+        background:url(../images/golden-style/big_button.png) 0 top  no-repeat;
+    }
+
+    a.banner_button:hover{
+        color:#fff !important; 
+        background:url(../images/golden-style/big_button.png)  0  -60px  no-repeat;
+    }
+
+
+/* buttons */
+    a.small_button{
+        color:#fff; 
+        background:url(../images/golden-style/small_button.png) top  no-repeat;
+    }
+
+    a.small_button:hover{
+        color:#fff; 
+        background:url(../images/golden-style/small_button.png)  0  -28px  no-repeat;
+    }
+
+
+/* Footer Forms */
+    #footer input, #footer select{ 
+        background:transparent url(../images/golden-style/footer_form_text_field.png) left top no-repeat;	 
+    }
+    
+    #footer textarea{
+        background:url(../images/golden-style/footer_form_textarea.png) left top no-repeat; 
+    }
+
+    #footer .submitbutton{
+        background:transparent url(../images/golden-style/footer_form_button.png) left top no-repeat; 
+    }
+    
+    #footer .submitbutton:hover{
+        background:transparent url(../images/golden-style/footer_form_button.png) 0  -27px  no-repeat;
+    }
+    
+
+/* Footer Background Color */
+    #footer{	
+        background:#56512E;
+        color:#9E998B;
+    }
+
+/* Foooter Links */
+    #footer a{
+        color:#9E998B;
+    }
+    
+    #footer a:hover{
+        color:#fff;
+    } 
+
+    #footer .row.footer .box ul a{
+        color:#9E998B;
+    }    
+    
+    #footer .row.footer .box ul a:hover{
+        color:#fff;
+    }    
+
+/* Footer Lists */
+    .row.footer .box li{
+        border-bottom:1px solid #686241;
+    }
+
+/* second footer */
+    .second_footer{
+        background-color:#56512E;
+        border-top:1px solid #686241;
+        color:#9E998B;
+    }
+
+/* Form Button */
+    /* active state */
+    .content form .button{
+        background:url(../images/golden-style/small_button.png) top  no-repeat;
+    }
+
+    /* hover state */
+    .content form .button:hover{
+        background:url(../images/golden-style/small_button.png)  0  -28px  no-repeat;
+    }   

@@ -1,0 +1,43 @@
+<?php
+	$pages = get_pages( array(
+		    	'sort_order' => 'ASC',
+		    	'sort_column' => 'post_title',
+		    	'parent' => 0 )
+				);
+	?>
+
+	<?php
+		if ($post->post_parent)
+			//I am a subpage
+			$id = $post->post_parent;
+		else
+			//I am a page
+			$id = $post->ID;
+
+		$subpages = get_pages(array("child_of"=>$id));
+	?>
+<ul>
+<?php foreach ($pages as $page):?>
+	<li>
+
+		<a href="<?php echo get_permalink($page->ID); ?> "><?php echo $page->post_title ?></a>
+		<?php
+		if ( ($page->ID == $post->ID) || ($post->post_parent == $page->ID) ):	
+
+		?>
+		<ul>
+			<?php
+				$args = array( 'hide_empty' => 0 );
+          		$terms = get_terms('luxury_taxonomy', $args);
+          		foreach( $terms as $category ):
+			?>
+			<li>
+				<a href="<?php echo esc_url( $category_link ); ?>" title="<?php echo $category->name; ?>"><?php echo $category->name; ?></a>
+			</li>
+			<?php endforeach; ?>
+		</ul>
+		<?php endif; ?>
+	</li>
+
+<?php endforeach;?>
+</ul>

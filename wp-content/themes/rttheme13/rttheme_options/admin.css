@@ -1,0 +1,241 @@
+/* begin css tabs */
+
+ul#tabnav { /* general settings */
+text-align: left; /* set to left, right or center */
+margin: 1px 0 1px 0; /* set margins as desired */
+font: bold 11px verdana, arial, sans-serif; /* set font as desired */
+list-style-type: none;
+padding: 15px 10px 4px 0px; /* THIRD number must change with respect to padding-top (X) below */
+width:810px;
+z-index:1;
+position:relative;
+}
+
+ul#tabnav li { /* do not change */
+display: inline;
+}
+
+#tab li.tab { /* settings for selected tab */
+border-bottom: 1px solid #fff; /* set border color to page background color */
+background-color: #fff; /* set background color to match above border color */
+}
+ 
+ul#tabnav li a { /* settings for all tab links */
+padding: 7px 7px 5px; /* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
+border: 1px solid #D4D4D4; /* set border COLOR as desired; usually matches border color specified in #tabnav */
+background-color: #fff; /* set unselected tab background color as desired */
+color: #ACACAC; /* set unselected tab link color as desired */
+margin-right: 0px; /* set additional spacing between tabs as desired */
+text-decoration: none;
+border-bottom: none;
+}
+
+
+ul#tabnav li a.active { /* settings for all tab links */
+padding: 7px 8px 5px;/* set padding (tab size) as desired; FIRST number must change with respect to padding-top (X) above */
+padding-left:25px;
+border: 1px solid #D4D4D4; /* set border COLOR as desired; usually matches border color specified in #tabnav */
+color: #666; /* set unselected tab link color as desired */
+margin-right: 0px; /* set additional spacing between tabs as desired */
+text-decoration: none;
+border-bottom: none;
+background: #f9f9f9 url(generic.png) 4px center no-repeat;		
+}
+
+ul#tabnav a:hover { /* settings for hover effect */
+background: #E9E9E9; /* set desired hover color */
+}
+
+/* end css tabs */
+
+
+
+.asmContainer {
+	/* container that surrounds entire asmSelect widget */
+}
+
+.asmSelect {
+	/* the newly created regular 'select' */
+	display: inline; 
+}
+
+.asmOptionDisabled {
+	/* disabled options in new select */
+	color: #999; 
+}
+
+.asmHighlight {
+	/* the highlight span */
+	padding: 0;
+	margin: 0 0 0 1em;
+}
+
+.asmList {
+	/* html list that contains selected items */
+	margin: 0.25em 0 1em 0; 
+	position: relative;
+	display: block;
+	padding-left: 0; 
+	list-style: none; 
+}
+
+.asmListItem {
+	/* li item from the html list above */
+	position: relative; 
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+	background: #ddd;
+	border: 1px solid #bbb; 
+	width: 100%; 
+	margin: 0 0 -1px 0; 
+	line-height: 1em;
+}
+
+.asmListItem:hover {
+	background-color: #e5e5e5;
+}
+
+.asmListItemLabel {
+	/* this is a span that surrounds the text in the item, except for the remove link */
+	padding: 5px; 
+	display: block;
+}
+
+.asmListSortable .asmListItemLabel {
+	cursor: move; 
+}
+
+.asmListItemRemove {
+	/* the remove link in each list item */
+	position: absolute;
+	right: 0; 
+	top: 0;
+	padding: 5px; 
+}
+
+.key_list {
+	display:block;
+	clear:both;
+}
+.key_list li{
+	float:left;
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background:#E4E4E4;
+	font-size:10px;
+	padding:2px 4px;
+	margin:2px;
+}
+
+.rt_panel_td_right{
+	-moz-border-radius: 6px;-khtml-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;border:1px solid #FFFFFF;padding:3px;background:#EBEBEB;width:420px;font-size:11px;
+}
+
+.rt_panel_td_left{
+	-moz-border-radius: 6px;-khtml-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;border:1px solid #FFFFFF;padding:7px;background:#EBEBEB;width:300px;font-size:11px;font-weight:normal;
+}
+.headings, .rt_ud_sidebars, fieldset.rt_fieldset lagend, fieldset.rt_fieldset , .sidebar_form_selectors li {
+	-moz-border-radius: 6px;-khtml-border-radius: 6px;-webkit-border-radius: 6px;border-radius: 6px;border:1px solid #FFFFFF;padding:3px;background:#F4F4F4;font-size:11px;
+}
+
+span.headings{
+	color:#BA3F42;
+	font-size:19px;
+	margin-left:10px;
+	border:0;
+}
+
+.headings p{
+	 color:#919191; font-size:11px;margin-left:10px;margin-top:5px;
+ }
+
+ .tabs_border{
+	 border:1px solid #D4D4D4;clear:both;width:810px;padding-left:10px;padding-right:10px;
+ }
+
+.rt_ud_sidebars{
+	background:#fff;
+	border:1px solid #D4D4D4;
+	margin:13px 5px;
+	padding:5px;
+}
+
+.rt_ud_sidebars i{
+	font-size:11px;
+	color:#8C8C8C;
+}
+
+.rt_ud_sidebars img{
+	float:right;
+	margin-right:10px;
+}
+
+.sidebar_form_selectors{
+	margin-top:10px;
+}
+
+.sidebar_form_selectors li{
+	float:left;
+	display:block;
+	background:#fff;
+	margin:5px 5px;
+	padding:5px;
+	border:1px solid #D4D4D4;
+}
+
+.clearfix{
+	clear:both;
+	height:30px;
+}
+
+
+fieldset.rt_fieldset {
+	border:1px solid #D4D4D4;
+	background: #EEEEEE;
+  }
+  
+fieldset.rt_fieldset lagend {
+	border:1px solid #D4D4D4;
+	background: #fff;
+	margin:5px 5px;
+	padding:9px;
+	color:#BA3F42;
+  }
+
+fieldset.rt_fieldset p {
+	margin:15px 8px;
+	font-size:11px;
+}
+
+.linkto{
+	
+	width:200px;
+}
+
+.rt-theme-widget label{
+	font-size:11px;
+}
+
+.rt-theme-widget small{
+	font-size:10px;
+	color:#8D8D8D;
+	font-style:italic;
+}
+
+.rt-theme-widget hr{
+	border:0;
+	height:1px;
+	background-color:#D6D6D6;
+}
+
+
+.manual_related, .post_related, .page_related, .manual_rest{
+	display:none;
+}
+
+.show_true{
+	display:block;	
+}

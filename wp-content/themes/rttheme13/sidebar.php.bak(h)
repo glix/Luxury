@@ -1,0 +1,21 @@
+
+	<div class="box four">
+	    <!-- box title-->
+	    <h4>Luxury Travel</h4>				
+	<!-- sub link-->
+		<ul class="sub_navigation">
+			<?php $luxury_taxonomies = get_terms('luxury_taxonomy'); ?>
+			<?php foreach ($luxury_taxonomies as $luxury_taxonomy) {
+			?>
+				<li>
+					<a href="<?php get_term_link( $luxury_taxonomy->slug, 'luxury_taxonomy' ); ?>">
+						<?php echo $luxury_taxonomy->name; ?>
+					</a>
+				</li>
+			<?php 
+			}
+			?>
+		</ul>			
+	<!-- /sub link-->
+	</div>
+	
