@@ -62,7 +62,7 @@ function wpcf7_flamingo_before_send_mail( $contactform ) {
 	Flamingo_Inbound_Message::add( array(
 		'channel' => 'contact-form-7',
 		'subject' => $subject,
-		'from' => trim( sprintf( '%s <%s>', $name, $email ) ),
+		'from' => sprintf( '%s <%s>', $name, $email ),
 		'from_name' => $name,
 		'from_email' => $email,
 		'fields' => $posted_data,
