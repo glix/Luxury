@@ -51,7 +51,7 @@ function wpcf7_load_contact_form_admin() {
 
 		$mail = array(
 			'subject' => trim( $_POST['wpcf7-mail-subject'] ),
-			'sender' => trim( $_POST['wpcf7-mail-sender'] ),
+			'sender' => $_POST['wpcf7-mail-sender'],
 			'body' => trim( $_POST['wpcf7-mail-body'] ),
 			'recipient' => trim( $_POST['wpcf7-mail-recipient'] ),
 			'additional_headers' => trim( $_POST['wpcf7-mail-additional-headers'] ),
